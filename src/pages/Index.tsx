@@ -1,7 +1,8 @@
-
 import { SearchBar } from "@/components/SearchBar";
 import { FilterBar } from "@/components/FilterBar";
 import { CarCard } from "@/components/CarCard";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const cars = [
   {
@@ -31,10 +32,20 @@ const cars = [
 ];
 
 const Index = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white shadow-sm">
         <div className="container mx-auto py-6">
+          <div className="flex justify-end mb-4">
+            <Button
+              onClick={() => navigate("/register")}
+              className="bg-primary hover:bg-primary-dark text-white"
+            >
+              Registrarse
+            </Button>
+          </div>
           <h1 className="text-3xl font-bold text-center mb-8 animate-fade-up">
             Encuentra tu auto ideal
           </h1>
