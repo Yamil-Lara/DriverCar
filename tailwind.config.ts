@@ -33,10 +33,6 @@ export default {
           DEFAULT: "#404040",
           dark: "#000000",
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
         muted: {
           DEFAULT: "#F3F4F6",
           foreground: "#6B7280",
@@ -44,10 +40,6 @@ export default {
         accent: {
           DEFAULT: "#E5F0FF",
           foreground: "#1A1F2C",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
         },
       },
       keyframes: {
